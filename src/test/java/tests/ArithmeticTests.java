@@ -2,6 +2,7 @@ package tests;
 
 import helpers.pageObject.CalculatorPage;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -22,6 +23,7 @@ public class ArithmeticTests extends BaseTest {
     )
     @ParameterizedTest(name = "{0} + {1} = {2}")
     @Tag("plus")
+    @Feature("Функции сложения")
     void additionTests(int firstDigit, int secondDigit, String result) {
         new CalculatorPage()
             .clickDigit(firstDigit)
@@ -42,6 +44,7 @@ public class ArithmeticTests extends BaseTest {
     )
     @ParameterizedTest(name = "{0} - {1} = {2}")
     @Tag("minus")
+    @Feature("Функции вычитания")
     void subtractionTests(int firstDigit, int secondDigit, String result) {
         new CalculatorPage()
             .clickDigit(firstDigit)
@@ -62,6 +65,7 @@ public class ArithmeticTests extends BaseTest {
     )
     @ParameterizedTest(name = "{0} * {1} = {2}")
     @Tag("multi")
+    @Feature("Функции умножения")
     void multiplicationTests(int firstDigit, int secondDigit, String result) {
         new CalculatorPage()
             .clickDigit(firstDigit)
@@ -83,6 +87,7 @@ public class ArithmeticTests extends BaseTest {
     )
     @ParameterizedTest(name = "{0} / {1} = {2}")
     @Tag("div")
+    @Feature("Функции деления")
     void divisionTests(int firstDigit, int secondDigit, String result) {
         new CalculatorPage()
             .clickDigit(firstDigit)

@@ -5,7 +5,6 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -13,7 +12,6 @@ import static helpers.Browserstack.browserstackLogin;
 import static helpers.Browserstack.browserstackPassword;
 import static helpers.Browserstack.browserstackDevice;
 import static helpers.Browserstack.browserstackAppId;
-
 
 public class BrowserstackMobileDriver implements WebDriverProvider {
 

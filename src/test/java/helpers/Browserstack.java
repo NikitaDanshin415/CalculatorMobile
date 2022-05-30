@@ -1,6 +1,5 @@
 package helpers;
 
-import config.BrowserstackConfig;
 import config.BrowserstackConfigProvider;
 
 import static io.restassured.RestAssured.given;
@@ -13,7 +12,6 @@ public class Browserstack {
         browserstackPassword = BrowserstackConfigProvider.browserstackConfig.getPassword(),
         browserstackDevice = BrowserstackConfigProvider.browserstackConfig.getDevice(),
         browserstackAppId = BrowserstackConfigProvider.browserstackConfig.getAppId();
-
 
     public static String videoUrl(String sessionId) {
         String url = format("https://api-cloud.browserstack.com/app-automate/sessions/%s.json", sessionId);

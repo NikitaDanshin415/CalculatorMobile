@@ -14,7 +14,6 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static io.qameta.allure.Allure.step;
 import static helpers.Attach.sessionId;
 
-
 public class BaseTest {
 
     @BeforeAll
