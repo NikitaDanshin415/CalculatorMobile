@@ -115,41 +115,40 @@ flowchart LR
 <h3>:iphone:<a name='runningTestsJenkins'>Запуск тестов в Jenkins</a></h3>
 В качестве CI для тестов используется Jenkins, запуск тестов осуществляется в контейнерах Selenoid.
 
-Для запуска тестов нужно создать параметризированную джобу. 
+Для запуска тестов нужно создать параметризованную сборку. 
 <p>1. В качестве параметров были выбраны</p>
-<p><b>-DforkCount</b> - количество потоков для запуска теста</p>
-<p><b>-Dbrowser</b> - браузер для запуска теста</p>
+<p><b>-Ddevice</b> - модель телефона на котором нужно запустить тесты</p>
+<p><b>-DappId</b> - id приложения browserStack</p>
 
 <p>2. По результатам прохождения тестов формируются Allure отчет, а так же происходит интеграция результатов в TMS AllureTestOps</p>
 
 <p align="center">
-    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/1.PNG.png" />
+    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_1.png" />
 </p>
 
 <h2>:iphone:<a name='results'>Результаты</a></h2>
 <h3>:iphone:<a name='resultsAllure'>Allure отчет о прохождении тестов</a></h3>
-На освнове результатов тестов формируется красивый Allure отчет. По которому можно посмотреть как прошли тесты и быстро определить
+На основе результатов тестов формируется красивый Allure отчет. По которому можно посмотреть как прошли тесты и быстро определить
 где была ошибка в случае ее обнаружения.
 
 <p align="center">
-    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/2.PNG" />
-    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/4.PNG" />
+<img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_5.png" />
 </p>
 
 <h3>:iphone:<a name='resultsInTms'>Результаты в TSM</a></h3>
-После прохождения тестов, результаты автоматически имопртируются в TMS, где их может посмотреть любой участник команды.
+После прохождения тестов, результаты автоматически импортируются в TMS, где их может посмотреть любой участник команды.
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/5.PNG" />
 </p>
 
 <h3>:iphone:<a name='resultsInJira'>Результаты в Jira</a></h3>
-Результаты из TMS имопртируются в задачу Jira
+Результаты из TMS импортируются в задачу Jira
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/8.png" />
 </p>
 
 <h3>:iphone:<a name='testCaseInTms'>Сценарии тестирования в TMS</a></h3>
-На освное написанных тестов, в системе управления тестовыми сценариями автоматически были созданы тест кейсы для пройденных тестов.
+На осиное написанных тестов, в системе управления тестовыми сценариями автоматически были созданы тест кейсы для пройденных тестов.
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/6.PNG" />
 </p>
