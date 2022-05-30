@@ -1,10 +1,4 @@
-<p align="center">
-      <a href="https://pikabu.ru/">
-        <img title="Pikabu" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/pikabu/Pikabu_Logo.png" />
-    </a>
-</p>
-
-<h1>В проекте реализованы тесты для сайта Pikabu</h1>
+<h1>В проекте реализованы тесты для мобильного приложения калькулятор</h1>
 Проект создан в рамках обучения в школе QA.GURU и представляет из себя часть выпускной работы.
 
 ## Оглавление
