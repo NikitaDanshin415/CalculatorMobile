@@ -4,7 +4,7 @@
 ## Оглавление
 + [Стек проекта](#projectStack)
 + [Архитектура проекта](#projectArchitecture)
-+ [Запуск тестов](#runningTests)
++ [Запуск тестов через Browserstack](#runningTests)
     + [Запуск тестов локально](#runningTestsLocal)
     + [Запуск тестов в Jenkins](#runningTestsJenkins)
 + [Результаты](#results)
@@ -144,13 +144,13 @@ flowchart LR
 <h3>:iphone:<a name='resultsInJira'>Результаты в Jira</a></h3>
 Результаты из TMS импортируются в задачу Jira
 <p align="center">
-    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/8.png" />
+       <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_8.png" />
 </p>
 
 <h3>:iphone:<a name='testCaseInTms'>Сценарии тестирования в TMS</a></h3>
 На осиное написанных тестов, в системе управления тестовыми сценариями автоматически были созданы тест кейсы для пройденных тестов.
 <p align="center">
-    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/6.PNG" />
+       <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_7.png" />
 </p>
 
 
@@ -159,7 +159,7 @@ flowchart LR
 В проекте настроены уведомления в телеграм, при помощи библиотеки <b>https://github.com/qa-guru/allure-notifications</b>
 
 <p align="center">
-    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/7.PNG" />
+    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_6.png" />
 </p>
 
 <h3>:iphone:<a name='resultVideo'>Видео прохождения тестов</a></h3>
