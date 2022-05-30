@@ -80,20 +80,33 @@ flowchart LR
 	E -.Берет данные из.-x D
 ```
 
-<h2>:iphone:<a name='runningTests'>Запуск тестов</a></h2>
+<h2>:iphone:<a name='runningTests'>Запуск тестов через Browserstack</a></h2>
+
+Перед тем как запустить тесты в Browserstack нужно в нем зарегистрироваться и загрузить apk файл с приложением.
+1) для регистрации нужно перейти по ссылке https://www.browserstack.com/users/sign_in
+узнать логин и пароль для запуска тестов можно нажав на кнопку 'Access key'
+<p align="center">
+    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_4.png" />
+</p>
+
+
+2) загрузить приложение можно тут https://app-automate.browserstack.com/dashboard/v2/get-started#upload-app
+<p align="center">
+    <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/Screenshot_3.png" />
+</p>
+
 
 <h3>:iphone:<a name='runningTestsLocal'>Запуск тестов локально</a></h3>
 
 Для запуска тестов локально используется команда : <b>gradle clean regress</b>
 
-<p><b>-DforkCount</b> - количество потоков для запуска теста</p>
-<p><b>-Dbrowser</b> - браузер для запуска теста</p>
-<p><b>-DappUrl</b> - ссылка на стенд с приложением</p>
+<p><b>-Ddevice</b> - модель телефона на котором нужно запустить тесты</p>
+<p><b>-DappId</b> - id приложения browserStack</p>
 
 Для работы тестов подразумевающих авторизацию в системе нужно дополнительно указать параметры:
-<p><b>-Dlogin</b> - логин для Pikabu</p>
-<p><b>-Dpassword</b> - пароль для Pikabu</p>
-<p>P.S. Либо прописать их в конфигурационном файле <b>resources/config/userConfig.properties</b></p>
+<p><b>-Dlogin</b> - логин для browserStack</p>
+<p><b>-Dpassword</b> - пароль для browserStack</p>
+<p>P.S. Либо прописать их в конфигурационном файле <b>resources/config/browserstack.properties</b></p>
 
 Так же необходимо указать токен бота и чат в который должны приходить уведомление в телеграмм. Для этого нужно
 отредактировать файл: <b>notifications/telegram.json</b>
