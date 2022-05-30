@@ -45,7 +45,7 @@
 
 
 
-<h2>:cookie:<a name='projectArchitecture'>Архитектура проекта</a></h2>
+<h2>:iphone:<a name='projectArchitecture'>Архитектура проекта</a></h2>
 Архитектура проекта состоит из 5 основных модулей
 <ol>
     <li>
@@ -80,9 +80,9 @@ flowchart LR
 	E -.Берет данные из.-x D
 ```
 
-<h2>:cookie:<a name='runningTests'>Запуск тестов</a></h2>
+<h2>:iphone:<a name='runningTests'>Запуск тестов</a></h2>
 
-<h3>:cookie:<a name='runningTestsLocal'>Запуск тестов локально</a></h3>
+<h3>:iphone:<a name='runningTestsLocal'>Запуск тестов локально</a></h3>
 
 Для запуска тестов локально используется команда : <b>gradle clean regress</b>
 
@@ -99,7 +99,7 @@ flowchart LR
 отредактировать файл: <b>notifications/telegram.json</b>
 
 
-<h3>:cookie:<a name='runningTestsJenkins'>Запуск тестов в Jenkins</a></h3>
+<h3>:iphone:<a name='runningTestsJenkins'>Запуск тестов в Jenkins</a></h3>
 В качестве CI для тестов используется Jenkins, запуск тестов осуществляется в контейнерах Selenoid.
 
 Для запуска тестов нужно создать параметризированную джобу. 
@@ -113,8 +113,8 @@ flowchart LR
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/1.PNG.png" />
 </p>
 
-<h2>:cookie:<a name='results'>Результаты</a></h2>
-<h3>:cookie:<a name='resultsAllure'>Allure отчет о прохождении тестов</a></h3>
+<h2>:iphone:<a name='results'>Результаты</a></h2>
+<h3>:iphone:<a name='resultsAllure'>Allure отчет о прохождении тестов</a></h3>
 На освнове результатов тестов формируется красивый Allure отчет. По которому можно посмотреть как прошли тесты и быстро определить
 где была ошибка в случае ее обнаружения.
 
@@ -123,26 +123,26 @@ flowchart LR
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/4.PNG" />
 </p>
 
-<h3>:cookie:<a name='resultsInTms'>Результаты в TSM</a></h3>
+<h3>:iphone:<a name='resultsInTms'>Результаты в TSM</a></h3>
 После прохождения тестов, результаты автоматически имопртируются в TMS, где их может посмотреть любой участник команды.
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/5.PNG" />
 </p>
 
-<h3>:cookie:<a name='resultsInJira'>Результаты в Jira</a></h3>
+<h3>:iphone:<a name='resultsInJira'>Результаты в Jira</a></h3>
 Результаты из TMS имопртируются в задачу Jira
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/8.png" />
 </p>
 
-<h3>:cookie:<a name='testCaseInTms'>Сценарии тестирования в TMS</a></h3>
+<h3>:iphone:<a name='testCaseInTms'>Сценарии тестирования в TMS</a></h3>
 На освное написанных тестов, в системе управления тестовыми сценариями автоматически были созданы тест кейсы для пройденных тестов.
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/6.PNG" />
 </p>
 
 
-<h3>:cookie:<a name='resultNotification'>Уведомления</a></h3>
+<h3>:iphone:<a name='resultNotification'>Уведомления</a></h3>
 Чтобы узнавать о результатах прохождения тестов, не обязательно постоянно следить за тестпланом в TMS или джобой в Jenkins.
 В проекте настроены уведомления в телеграм, при помощи библиотеки <b>https://github.com/qa-guru/allure-notifications</b>
 
@@ -150,7 +150,7 @@ flowchart LR
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_1/7.PNG" />
 </p>
 
-<h3>:cookie:<a name='resultVideo'>Видео прохождения тестов</a></h3>
+<h3>:iphone:<a name='resultVideo'>Видео прохождения тестов</a></h3>
 <p align="center">
     <img title="Jenkins" src="https://github.com/NikitaDanshin415/NikitaDanshin415/blob/main/diploma_3/848868182d66d878701aee934ac4072af6abec91.gif" />
 </p>
