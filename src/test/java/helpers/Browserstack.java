@@ -1,17 +1,16 @@
 package helpers;
 
-import config.BrowserstackConfigProvider;
-
+import static config.BrowserstackConfigProvider.*;
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
 
 public class Browserstack {
 
     public static String
-        browserstackLogin = BrowserstackConfigProvider.browserstackConfig.getLogin(),
-        browserstackPassword = BrowserstackConfigProvider.browserstackConfig.getPassword(),
-        browserstackDevice = BrowserstackConfigProvider.browserstackConfig.getDevice(),
-        browserstackAppId = BrowserstackConfigProvider.browserstackConfig.getAppId();
+        browserstackLogin = browserstackConfig.login(),
+        browserstackPassword = browserstackConfig.password(),
+        browserstackDevice = browserstackConfig.device(),
+        browserstackAppId = browserstackConfig.appId();
 
     public static String videoUrl(String sessionId) {
         String url = format("https://api-cloud.browserstack.com/app-automate/sessions/%s.json", sessionId);

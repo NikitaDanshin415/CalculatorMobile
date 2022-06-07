@@ -1,6 +1,6 @@
 package tests;
 
-import helpers.pageObject.CalculatorPage;
+import pages.CalculatorPage;
 
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +10,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 @DisplayName("Арифметические тесты")
 public class ArithmeticTests extends BaseTest {
-
 
     @CsvSource(value = {
         "1 | 1 | 2",
