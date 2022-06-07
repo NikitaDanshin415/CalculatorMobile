@@ -8,17 +8,12 @@ import org.aeonbits.owner.Config;
     "classpath:config/browserstack.properties"
 })
 public interface BrowserstackConfig extends Config {
+    String login();
 
-    @Config.Key("login")
-    String getLogin();
+    String password();
 
-    @Config.Key("password")
-    String getPassword();
-
-    @Config.Key("device")
     @DefaultValue("Google Pixel 3")
-    String getDevice();
+    String device();
 
-    @Config.Key("appId")
-    String getAppId();
+    String appId();
 }
